@@ -69,43 +69,43 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon1024.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon-1024.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon120.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon-120.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon152.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon-152.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon167.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon-167.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon180.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon-180.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon20.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon-20.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon29.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon-29.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon40.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon-40.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon58.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon-58.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon60.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon-60.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon76.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon-76.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon80.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon-80.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon87.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon-87.png">
       <Visible>false</Visible>
     </ImageAsset>
   </ItemGroup>
