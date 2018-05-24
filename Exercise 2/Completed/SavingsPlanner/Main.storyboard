@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5407">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <!--Input Container View-->
+        <scene sceneID="5406">
+            <objects>
+                <viewController id="5407" sceneMemberID="viewController" customClass="SavingsViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5404"/>
+                        <viewControllerLayoutGuide type="bottom" id="5405"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5408">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="5411" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="16" y="72" width="343" height="423"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5416">
+                                        <rect key="frame" x="216" y="171" width="119" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="decimalPad"/>
+                                        <constraints>
+                                            <constraint id="10558" firstItem="5416" firstAttribute="width" constant="119"/>
+                                        </constraints>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5417">
+                                        <rect key="frame" x="216" y="210" width="119" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="decimalPad"/>
+                                        <constraints>
+                                            <constraint id="10567" firstItem="5417" firstAttribute="width" constant="119"/>
+                                        </constraints>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5418">
+                                        <rect key="frame" x="216" y="249" width="119" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="decimalPad"/>
+                                        <constraints>
+                                            <constraint id="10570" firstItem="5418" firstAttribute="width" constant="119"/>
+                                        </constraints>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5419">
+                                        <rect key="frame" x="216" y="288" width="119" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="decimalPad"/>
+                                        <constraints>
+                                            <constraint id="10576" firstItem="5419" firstAttribute="width" constant="119"/>
+                                        </constraints>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5421">
+                                        <rect key="frame" x="0.0" y="331" width="343" height="2"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="5422"/>
+                                        </constraints>
+                                    </view>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5425" enabled="NO">
+                                        <rect key="frame" x="216" y="346" width="119" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="decimalPad"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint id="10585" firstItem="5425" firstAttribute="width" constant="119"/>
+                                        </constraints>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starting balance: $" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5426">
+                                        <rect key="frame" x="8" y="177" width="200" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest rate: %" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5427">
+                                        <rect key="frame" x="8" y="217" width="200" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monthly deposit: $" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5428">
+                                        <rect key="frame" x="8" y="256" width="200" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of years:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5429">
+                                        <rect key="frame" x="8" y="294" width="200" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Final balance: $" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5491">
+                                        <rect key="frame" x="8" y="352" width="200" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7921" translatesAutoresizingMaskIntoConstraints="NO" buttonType="roundedRect">
+                                        <rect key="frame" x="216" y="384" width="119" height="30"/>
+                                        <state key="normal" title="Calculate"/>
+                                        <connections>
+                                            <action selector="CalculateButton_TouchUpInside:" destination="5407" id="8244" eventType="touchUpInside"/>
+                                        </connections>
+                                        <constraints>
+                                            <constraint id="10591" firstItem="7921" firstAttribute="width" constant="119"/>
+                                        </constraints>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="11369" translatesAutoresizingMaskIntoConstraints="NO" image="Savings.png">
+                                        <rect key="frame" x="101.5" y="8" width="140" height="140"/>
+                                        <constraints>
+                                            <constraint id="12080" firstItem="11369" firstAttribute="height" constant="140"/>
+                                            <constraint id="12081" firstItem="11369" firstAttribute="width" constant="140"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1"/>
+                                <constraints>
+                                    <constraint id="10556" firstItem="5416" firstAttribute="top" secondItem="5411" secondAttribute="top" constant="171"/>
+                                    <constraint id="10557" firstItem="5411" firstAttribute="trailing" secondItem="5416" secondAttribute="trailing" constant="8"/>
+                                    <constraint id="10559" firstItem="5426" firstAttribute="top" secondItem="5411" secondAttribute="top" constant="177"/>
+                                    <constraint id="10560" firstItem="5426" firstAttribute="leading" secondItem="5411" secondAttribute="leading" constant="8"/>
+                                    <constraint id="10561" firstItem="5416" firstAttribute="leading" secondItem="5426" secondAttribute="trailing" constant="8"/>
+                                    <constraint id="10562" firstItem="5427" firstAttribute="top" secondItem="5426" secondAttribute="bottom" constant="22"/>
+                                    <constraint id="10563" firstItem="5427" firstAttribute="leading" secondItem="5411" secondAttribute="leading" constant="8"/>
+                                    <constraint id="10564" firstItem="5417" firstAttribute="leading" secondItem="5427" secondAttribute="trailing" constant="8"/>
+                                    <constraint id="10565" firstItem="5417" firstAttribute="top" secondItem="5416" secondAttribute="bottom" constant="9"/>
+                                    <constraint id="10566" firstItem="5411" firstAttribute="trailing" secondItem="5417" secondAttribute="trailing" constant="8"/>
+                                    <constraint id="10568" firstItem="5418" firstAttribute="top" secondItem="5417" secondAttribute="bottom" constant="9"/>
+                                    <constraint id="10569" firstItem="5411" firstAttribute="trailing" secondItem="5418" secondAttribute="trailing" constant="8"/>
+                                    <constraint id="10571" firstItem="5418" firstAttribute="leading" secondItem="5428" secondAttribute="trailing" constant="8"/>
+                                    <constraint id="10572" firstItem="5428" firstAttribute="top" secondItem="5427" secondAttribute="bottom" constant="21"/>
+                                    <constraint id="10573" firstItem="5428" firstAttribute="leading" secondItem="5411" secondAttribute="leading" constant="8"/>
+                                    <constraint id="10574" firstItem="5419" firstAttribute="top" secondItem="5418" secondAttribute="bottom" constant="9"/>
+                                    <constraint id="10575" firstItem="5411" firstAttribute="trailing" secondItem="5419" secondAttribute="trailing" constant="8"/>
+                                    <constraint id="10577" firstItem="5429" firstAttribute="top" secondItem="5428" secondAttribute="bottom" constant="20"/>
+                                    <constraint id="10578" firstItem="5429" firstAttribute="leading" secondItem="5411" secondAttribute="leading" constant="8"/>
+                                    <constraint id="10579" firstItem="5419" firstAttribute="leading" secondItem="5429" secondAttribute="trailing" constant="8"/>
+                                    <constraint id="10580" firstItem="5421" firstAttribute="top" secondItem="5429" secondAttribute="bottom" constant="19"/>
+                                    <constraint id="10581" firstItem="5421" firstAttribute="trailing" secondItem="5411" secondAttribute="trailing"/>
+                                    <constraint id="10582" firstItem="5421" firstAttribute="leading" secondItem="5411" secondAttribute="leading"/>
+                                    <constraint id="10583" firstItem="5411" firstAttribute="trailing" secondItem="5425" secondAttribute="trailing" constant="8"/>
+                                    <constraint id="10584" firstItem="5425" firstAttribute="top" secondItem="5421" secondAttribute="centerY" constant="14"/>
+                                    <constraint id="10586" firstItem="5491" firstAttribute="top" secondItem="5421" secondAttribute="centerY" constant="20"/>
+                                    <constraint id="10587" firstItem="5425" firstAttribute="leading" secondItem="5491" secondAttribute="trailing" constant="8"/>
+                                    <constraint id="10588" firstItem="5491" firstAttribute="leading" secondItem="5411" secondAttribute="leading" constant="8"/>
+                                    <constraint id="10589" firstItem="7921" firstAttribute="top" secondItem="5425" secondAttribute="bottom" constant="8"/>
+                                    <constraint id="10590" firstItem="5411" firstAttribute="trailing" secondItem="7921" secondAttribute="trailing" constant="8"/>
+                                    <constraint id="11723" firstItem="11369" firstAttribute="centerX" secondItem="5411" secondAttribute="centerX"/>
+                                    <constraint id="11724" firstItem="11369" firstAttribute="top" secondItem="5411" secondAttribute="top" constant="8"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Savings Planner" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6312">
+                                <rect key="frame" x="16" y="30" width="343" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" lineBreakMode="middleTruncation" id="9162" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="337" y="31" width="22" height="22"/>
+                                <connections>
+                                    <segue id="9457" destination="9158" kind="show"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="6313" firstItem="6312" firstAttribute="leading" secondItem="5408" secondAttribute="leadingMargin"/>
+                            <constraint id="6314" firstItem="6312" firstAttribute="top" secondItem="5404" secondAttribute="bottom" constant="10"/>
+                            <constraint id="6315" firstItem="6312" firstAttribute="trailing" secondItem="5408" secondAttribute="trailingMargin"/>
+                            <constraint id="9163" firstItem="9162" firstAttribute="top" secondItem="5404" secondAttribute="bottom" constant="11"/>
+                            <constraint id="9164" firstItem="9162" firstAttribute="trailing" secondItem="5408" secondAttribute="trailingMargin"/>
+                            <constraint id="10543" firstItem="5411" firstAttribute="top" secondItem="6312" secondAttribute="bottom" constant="18"/>
+                            <constraint id="10544" firstItem="5411" firstAttribute="trailing" secondItem="5408" secondAttribute="trailingMargin"/>
+                            <constraint id="10545" firstItem="5411" firstAttribute="leading" secondItem="5408" secondAttribute="leadingMargin"/>
+                            <constraint id="10546" firstItem="5405" firstAttribute="top" secondItem="5411" secondAttribute="bottom" constant="172"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="calculateButton" destination="7921" id="name-outlet-7921"/>
+                        <outlet property="startingBalanceEntry" destination="5416" id="name-outlet-5416"/>
+                        <outlet property="interestRateEntry" destination="5417" id="name-outlet-5417"/>
+                        <outlet property="monthlyDepositEntry" destination="5418" id="name-outlet-5418"/>
+                        <outlet property="yearsEntry" destination="5419" id="name-outlet-5419"/>
+                        <outlet property="finalBalanceEntry" destination="5425" id="name-outlet-5425"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5409" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1225" y="56"/>
+        </scene>
+        <scene sceneID="9157">
+            <objects>
+                <viewController id="9158" sceneMemberID="viewController" customClass="AboutViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9155"/>
+                        <viewControllerLayoutGuide type="bottom" id="9156"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9159">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Savings Planner" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9517">
+                                <rect key="frame" x="16" y="64" width="343" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2018 Xamarin Inc., Microsoft. All rights reserved" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9518">
+                                <rect key="frame" x="16" y="633" width="343" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="9522" firstItem="9518" firstAttribute="height" constant="24"/>
+                                </constraints>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9887" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="6" y="20" width="21" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="X"/>
+                                <connections>
+                                    <action selector="CloseButton_TouchUpInside:" destination="9158" id="9957" eventType="touchUpInside"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="9960" firstItem="9887" firstAttribute="width" constant="21"/>
+                                    <constraint id="9961" firstItem="9887" firstAttribute="height" constant="30"/>
+                                </constraints>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="12510" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="88" y="96" width="200" height="200"/>
+                                <constraints>
+                                    <constraint id="12513" firstItem="12510" firstAttribute="height" constant="200"/>
+                                    <constraint id="12514" firstItem="12510" firstAttribute="width" constant="200"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="9519" firstItem="9518" firstAttribute="leading" secondItem="9159" secondAttribute="leadingMargin"/>
+                            <constraint id="9520" firstItem="9159" firstAttribute="bottom" secondItem="9518" secondAttribute="bottom" constant="10"/>
+                            <constraint id="9521" firstItem="9518" firstAttribute="trailing" secondItem="9159" secondAttribute="trailingMargin"/>
+                            <constraint id="9958" firstItem="9159" firstAttribute="leadingMargin" secondItem="9887" secondAttribute="leading" constant="10"/>
+                            <constraint id="9959" firstItem="9887" firstAttribute="top" secondItem="9155" secondAttribute="bottom"/>
+                            <constraint id="10941" firstItem="9517" firstAttribute="top" secondItem="9155" secondAttribute="bottom" constant="44"/>
+                            <constraint id="10942" firstItem="9517" firstAttribute="leading" secondItem="9159" secondAttribute="leadingMargin"/>
+                            <constraint id="10943" firstItem="9517" firstAttribute="trailing" secondItem="9159" secondAttribute="trailingMargin"/>
+                            <constraint id="12511" firstItem="12510" firstAttribute="top" secondItem="9517" secondAttribute="bottom" constant="8"/>
+                            <constraint id="12512" firstItem="12510" firstAttribute="centerX" secondItem="9159" secondAttribute="centerX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="9887" id="name-outlet-9887"/>
+                        <outlet property="pigImageView" destination="12510" id="name-outlet-12510"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9160" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1732" y="56"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Savings.png" width="140" height="140"/>
+    </resources>
+</document>
