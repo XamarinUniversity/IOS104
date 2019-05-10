@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+    <title>Exercise 1: Organize icons in an asset catalog</title>
+    <link rel="stylesheet" type="text/css" href="./res/styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./res/styles/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="./res/styles/styles.css">
+</head>
+
+<body>
+    <!-- Use the same title as the index -->
+    <header>IOS104 Add a launch screen and app icons</header>
+
+    <section id="main">
+        <h2>Exercise 1: Organize icons in an asset catalog</h2>
+<p>The primary goal of this lab is to teach you how to set up your iOS app's icons using an asset catalog.</p>
+<p>When finished, you will be able to see the app icon in various places within the iOS UI.</p>
+<figure class="figure">
+<img src="./images/ex1_complete.png" alt="Viewing the custom app icon in Spotlight on an iPhone simulator." style="max-height: 500px;" title="Exercise 1 completed" />
+<figcaption class="figure-caption">Exercise 1 completed</figcaption>
+</figure>
+<blockquote class="info-quote">To complete the exercise, you will need <a href="https://www.visualstudio.com/" target="_blank">Visual Studio for Windows or macOS</a> with the <a href="https://visualstudio.microsoft.com/xamarin/" target="_blank">Xamarin development tools</a> installed. You will also need either an emulator/simulator or a device to run the exercise on. Please see the <a href="https://docs.microsoft.com/xamarin/cross-platform/get-started/installation/" target="_blank">setup page</a> if you need help installing the Xamarin development environment.
+</blockquote>
+
+<hr>
+<h2>Open starter solution</h2>
+<p>The starter solution contains a sample <strong>SavingsPlanner</strong> app. We will be adding our icons to this app.</p>
+<ide name="vs">
+<ol>
+<li>Open the <strong>Exercise 1 &gt; Start</strong> solution from your copy of the cloned or downloaded <a href="https://github.com/XamarinUniversity/IOS104/">course materials</a> in <strong>Visual Studio</strong>.</li>
+</ol>
+</ide>
+<ide name="xs">
+<ol>
+<li>Open the <strong>Exercise 1 &gt; Start</strong> solution from your copy of the cloned or downloaded <a href="https://github.com/XamarinUniversity/IOS104/">course materials</a> in <strong>Visual Studio for Mac</strong>.</li>
+</ol>
+</ide>
+
+<hr>
+<h2>Add an asset catalog</h2>
+<p>While the starter project includes an initial asset catalog, you can also add a new asset catalog to any existing iOS project. These steps are optional for this exercise.</p>
+<ide name="vs">
+<ol>
+<li>In the <strong>Solution Explorer</strong>, right-click the <strong>Asset Catalogs</strong> node and choose <strong>Add Asset Catalog</strong>.</li>
+<li>Leave the <strong>Apple</strong> &gt; <strong>Code</strong> &gt; <strong>Asset Catalog</strong> template selected and give your asset catalog a name.</li>
+<li>Click the <strong>Add</strong> button.</li>
+<li>The asset catalog template will give you an app icon image set, but you can add one to an asset catalog by clicking the plus (<strong>+</strong>) button and choosing <strong>App Icon and Launch Image</strong> &gt; <strong>Add App Icon</strong>.</li>
+</ol>
+</ide>
+<ide name="xs">
+<ol>
+<li>In the <strong>Solution</strong> pad, right-click the iOS app project node and choose <strong>Add</strong> &gt; <strong>New File…</strong>.</li>
+<li>Select the <strong>Asset Catalog</strong> template from the <strong>iOS</strong> category.</li>
+<li>Give your new asset catalog a name, or leave the default value, and click <strong>New</strong>.</li>
+<li>To add an app icon image set, right-click in the left side of the asset catalog window, and choose <strong>App Icons &amp; Launch Images</strong> &gt; <strong>New App Icon</strong>.</li>
+</ol>
+<blockquote>
+NOTE: Visual Studio will sort your asset catalogs together toward the top of the project rather than with the other project files.
+</blockquote>
+</ide>
+
+<hr>
+<h2>Open the provided asset catalog</h2>
+<p>Now let's use our own icon for the various app icons in the asset catalog. Feel free to use any custom icons you want, but a set of icons are also provided in the <strong>Exercise 1</strong> &gt; <strong>Assets</strong> solution from your copy of the cloned or downloaded <a href="https://github.com/XamarinUniversity/IOS104/">course materials</a>.</p>
+<ide name="vs">
+<ol>
+<li>From the <strong>Solution Explorer</strong>, expand the <strong>Asset Catalogs</strong> node and open the <strong>Assets</strong> asset catalog.</li>
+<li>Select the <strong>AppIcon</strong> image set from the left-hand list.</li>
+<li>Click the <strong>…</strong> icon on the <strong>40x40</strong> image to pick a new image file.</li>
+<li>In the file open dialog, select the <strong>Assets</strong> &gt; <strong>Icon-40.png</strong> icon and click <strong>Open</strong>.</li>
+<li>Do the same above steps for the remaining default app icons, matching the requested icon size with the appropriate <strong>Icon-{size}.png</strong> image.</li>
+</ol>
+<blockquote class="info-quote">Note: some icon sizes will be used multiple times to complete the various app icons and their higher-density versions.
+</blockquote>
+</ide>
+<ide name="xs">
+<ol>
+<li>From the <strong>Solution</strong> pad, open the provided <strong>Assets.xcassets</strong> asset catalog.</li>
+<li>Select the <strong>AppIcon</strong> set from the left-hand side to see the various app icons.</li>
+<li>Click the <strong>2x</strong> icon for <strong>iPhone Notification</strong> image to open the file picker.</li>
+<li>In the file open dialog, select the <strong>Assets</strong> &gt; <strong>Icon-40.png</strong> icon and click <strong>Open</strong>.</li>
+<li>Do the same above steps for the remaining iPhone and iPad app icons, matching the requested icon size with the appropriate <strong>Icon-{size}.png</strong> image.</li>
+</ol>
+<p>Leave the Apple Watch and Mac icons unset, we won't be working with an Apple Watch project or macOS project, but they would be set the same way on this screen.</p>
+<blockquote class="info-quote">Note: some icon sizes will be used multiple times to complete the various app icons and their higher-density versions. If you are asked to overwrite an existing icon, click <strong>Yes</strong>.
+</blockquote>
+</ide>
+
+<hr>
+<h2>Run the app</h2>
+<p>To verify the new icon is set, run the app on a simulator.</p>
+<ol>
+<li>Launch the app in debug mode on any simulator.</li>
+<li>After the app launches, hit the home button on the simulator and verify the app icon you set is present on the launcher home screen.</li>
+<li>Additionally, you can verify other icon uses. For example, the Spotlight icon can be found by dragging down from the root iOS launcher screen and typing in the name of your app. You can also see the settings icon by scrolling down to the app list in the simulator's <strong>Settings</strong> app.</li>
+</ol>
+<figure class="figure">
+<img src="./images/ex1_complete.png" alt="Viewing the custom app icon in Spotlight on an iPhone simulator." style="max-height: 500px;" title="Custom Spotlight icon" />
+<figcaption class="figure-caption">Custom Spotlight icon</figcaption>
+</figure>
+
+<hr>
+<h2>Exercise summary</h2>
+<p>Congratulations! In this lab you configured the icons for an iOS application using an asset catalog.</p>
+<p>You can view the completed solution in the <strong>Exercise 1 &gt; Completed</strong> folder of your copy of the cloned or downloaded <a href="https://github.com/XamarinUniversity/IOS104/">course materials</a>.</p>
+
+
+        <div class="align-right">
+            <a href="../index.html">Go Back</a>
+        </div>
+
+    </section>
+
+    <script src="./res/js/jquery.min.js"></script>
+    <script src="./res/js/jquery.imagemapster.min.js"></script>
+    <script src="./res/js/imagemap.js"></script>
+    <script src="./res/js/prettify.js"></script>
+    <script src="./res/js/script.js"></script>
+
+    <footer>Copyright (C) 2018 Xamarin Inc., Microsoft. All rights reserved.<br><a target="_blank" href="http://university.xamarin.com">Visit Xamarin University for more classes and content</a></footer>
+
+</body>
+</html>
