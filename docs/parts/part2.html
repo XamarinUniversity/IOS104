@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+    <title>Exercise 2: Create a responsive launch screen</title>
+    <link rel="stylesheet" type="text/css" href="./res/styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./res/styles/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="./res/styles/styles.css">
+</head>
+
+<body>
+    <!-- Use the same title as the index -->
+    <header>IOS104 Add a launch screen and app icons</header>
+
+    <section id="main">
+        <h2>Exercise 2: Create a responsive launch screen</h2>
+<p>This exercise will teach you how to use the designer to set up a responsive iOS app launch screen for a variety of screen sizes.</p>
+<p>Your finished launch screen should look like this:</p>
+<figure class="figure">
+<img src="./images/ex2_complete.png" alt="Viewing the custom launch screen on an iPhone simulator." style="max-height: 500px;" title="Exercise 2 completed" />
+<figcaption class="figure-caption">Exercise 2 completed</figcaption>
+</figure>
+<blockquote class="info-quote">To complete the exercise, you will need <a href="https://www.visualstudio.com/" target="_blank">Visual Studio for Windows or macOS</a> with the <a href="https://visualstudio.microsoft.com/xamarin/" target="_blank">Xamarin development tools</a> installed. You will also need either an emulator/simulator or a device to run the exercise on. Please see the <a href="https://docs.microsoft.com/xamarin/cross-platform/get-started/installation/" target="_blank">setup page</a> if you need help installing the Xamarin development environment.
+</blockquote>
+
+<hr>
+<h2>Open the starter solution</h2>
+<p>This exercise is a continuation of the previous exercise. You can use your existing solution or begin from the prior <strong>Exercise 1 &gt; Completed</strong> solution in your copy of the cloned or downloaded <a href="https://github.com/XamarinUniversity/IOS104/">course materials</a>.</p>
+
+<hr>
+<h2>Create a new storyboard</h2>
+<p>While the template we used to generate this app will include a default <strong>LaunchScreen.storyboard</strong>, you can add a new storyboard to any existing iOS project.</p>
+<ide name="vs">
+<ol>
+<li>In the <strong>Solution Explorer</strong>, right-click the iOS app project node and choose <strong>Add</strong> &gt; <strong>New Item…</strong>.</li>
+<li>Choose the <strong>Apple</strong> &gt; <strong>User Interface</strong> &gt; <strong>Empty Storyboard</strong> template from the <strong>Add New Item</strong> window.</li>
+<li>Give the storyboard a name and click <strong>Add</strong>.</li>
+</ol>
+</ide>
+<ide name="xs">
+<ol>
+<li>In the <strong>Solution</strong> pad, right-click the iOS app node and choose <strong>Add</strong> &gt; <strong>New File…</strong>.</li>
+<li>Select the <strong>Storyboard</strong> template from the <strong>iOS</strong> category.</li>
+<li>Give your storyboard a name and click <strong>New</strong>.</li>
+</ol>
+</ide>
+
+<hr>
+<h2>Add launch graphic image set</h2>
+<p>While the starter project already includes an image set in the asset catalog that we will use for this exercise, you can also add a new asset catalog to an asset catalog. These steps are optional for this exercise.</p>
+<p>To make an image easily available for a launch storyboard, we add it as an image set of an asset catalog. Feel free to use any image you want, but a launch image is also provided for three densities in the <strong>Exercise 2</strong> &gt; <strong>Assets</strong> solution from your copy of the cloned or downloaded <a href="https://github.com/XamarinUniversity/IOS104/">course materials</a>.</p>
+<ide name="vs">
+<ol>
+<li>From the <strong>Solution Explorer</strong>, expand the <strong>Asset Catalogs</strong> node and open the <strong>Assets</strong> asset catalog.</li>
+<li>In the left-hand pane, click the plus (<strong>+</strong>) icon to add a new image set and name it &quot;LaunchImage&quot;.</li>
+<li>Click the <strong>…</strong> icon on the <strong>1x</strong> image to pick an image file.</li>
+<li>In the file open dialog, select the <strong>Assets</strong> &gt; <strong>launch-icon@1x.png</strong> icon and click <strong>Open</strong>.</li>
+<li>Do the same above steps for <strong>2x</strong> and <strong>3x</strong> images, matching the requested density with the appropriate <strong>launch-icon@{scaleFactor}x.png</strong> image.</li>
+</ol>
+</ide>
+<ide name="xs">
+<ol>
+<li>From the <strong>Solution</strong> pad, open the provided <strong>Assets.xcassets</strong> asset catalog.</li>
+<li>In the left-hand pane, right-click and choose <strong>New Image Set</strong>.</li>
+<li>Select the newly added image set and press <kbd>F2</kbd> to rename it to &quot;LaunchImage&quot;.</li>
+<li>Inside the new <strong>LaunchImage</strong> set, click the <strong>1x</strong> image to pick an image file.</li>
+<li>In the file open dialog, select the <strong>Assets</strong> &gt; <strong>launch-icon@1x.png</strong> icon and click <strong>Open</strong>.</li>
+<li>Do the same above steps for <strong>2x</strong> and <strong>3x</strong> images, matching the requested density with the appropriate <strong>launch-icon@{scaleFactor}x.png</strong> image.</li>
+</ol>
+</ide>
+
+<hr>
+<h2>Add image to storyboard</h2>
+<p>For this step, we'll create a simple launch screen layout of a centered image with a background color.</p>
+<ide name="vs">
+<ol>
+<li>In the <strong>Solution Explorer</strong>, open the provided <strong>LaunchScreen.storyboard</strong> file.</li>
+<li>Inside the <strong>Toolbox</strong> (<strong>View</strong> &gt; <strong>Toolbox</strong> from the Visual Studio menu), find the <strong>Image View</strong> control and drag it into the view controller.</li>
+</ol>
+<blockquote class="info-quote">Note: If you are working from a new empty storyboard, you will have to first drag a <strong>View Controller</strong> onto the storyboard surface to recieve the image view control.
+</blockquote>
+<ol start="3">
+<li>Select the newly added image view and open the <strong>Properties</strong> window (<strong>View</strong> &gt; <strong>Properties Window</strong>).</li>
+<li>Within the <strong>Widget</strong> tab, select the <strong>Image</strong> dropdown and choose the <strong>LaunchImage</strong> image set we added previously.</li>
+<li>Switch to the <strong>Layout</strong> tab and adjust the <strong>Width</strong> and <strong>Height</strong> to match your images dimensions: <code>140</code> by <code>140</code>, respectively, for the image provided for this exercise.</li>
+</ol>
+</ide>
+<ide name="xs">
+<ol>
+<li>From the <strong>Solution</strong> pad, open the provided <strong>LaunchScreen.storyboard</strong> file.</li>
+<li>Inside the <strong>Toolbox</strong> pad (<strong>View</strong> &gt; <strong>Pads</strong> &gt; <strong>Toolbox</strong> from the menu), find the <strong>Image View</strong> control and drag it into the view controller.</li>
+</ol>
+<blockquote class="info-quote">Note: If you are working from a new empty storyboard, you will have to first drag a <strong>View Controller</strong> onto the storyboard surface to recieve the image view control.
+</blockquote>
+<ol start="3">
+<li>Select the newly added image view and open the <strong>Properties</strong> window (<strong>View</strong> &gt; <strong>Pads</strong> &gt; <strong>Properties</strong>).</li>
+<li>Within the <strong>Widget</strong> tab, select the <strong>Image</strong> dropdown and choose the <strong>LaunchImage</strong> image set we added previously.</li>
+<li>Switch to the <strong>Layout</strong> tab and adjust the <strong>Width</strong> and <strong>Height</strong> to match your images dimensions: <code>140</code> by <code>140</code>, respectively, for the image provided for this exercise.</li>
+</ol>
+</ide>
+
+<hr>
+<h2>Add image constraints</h2>
+<ol>
+<li>Switch to <strong>Constraint Editing Mode</strong> by clicking the appropriate button from the right-hand side of the toolbar on the designer window.</li>
+<li>
+To center our image, constrain the center of the image to the center of the view controller.
+<ol>
+<li>Drag the image view's center constraint handle, represented by a square in the middle of the control, and drop it on the dashed horizontal center line of the view controller.</li>
+<li>Then, drag the same center constraint handle and drop it on the dashed vertical center line of the view controller.</li>
+<li>If your image view is offset, double click the affected constraint lines and set the <strong>Constant</strong> value to <code>0</code>.</li>
+</ol>
+</li>
+</ol>
+<p>Your image view should be fully constrained at this point by the image dimensions and the center constraints.</p>
+<figure class="figure">
+<img src="./images/ex2_set-constraint-constant.png" alt="Adjusting the center constraint of the image view by editing the constant value." style="max-height: 500px;" title="Setting the center constraint offset constant" />
+<figcaption class="figure-caption">Setting the center constraint offset constant</figcaption>
+</figure>
+
+<hr>
+<h2>Set view controller background color</h2>
+<p>To give our launch screen's icon a little more impact, lets set a custom background color.</p>
+<ide name="vs">
+<ol>
+<li>Within the launch storyboard, select the view controller and open the <strong>Properties</strong> window (<strong>View</strong> &gt; <strong>Properties Window</strong>).</li>
+<li>Within the <strong>Widget</strong> tab, select the <strong>Custom</strong> category of colors in the <strong>Background</strong> section.</li>
+<li>
+Set the following RGBA (red, green, blue, alpha) values to set it to use a custom blue color:
+<ul>
+<li>R: <code>2</code></li>
+<li>G: <code>143</code></li>
+<li>B: <code>255</code></li>
+<li>A: <code>255</code></li>
+</ul>
+</li>
+</ol>
+</ide>
+<ide name="xs">
+<ol>
+<li>Within the launch storyboard, select the view controller and open the <strong>Properties</strong> window (<strong>View</strong> &gt; <strong>Properties Window</strong>).</li>
+<li>Within the <strong>Widget</strong> tab, expand the <strong>Background</strong> drop-down list and choose the <strong>Other…</strong> color value.</li>
+<li>Inside the color picker window that pops up, choose the <strong>Color Sliders</strong> tab.</li>
+<li>From the input type drop-down list, select <strong>RGB Sliders</strong> and set the <strong>Hex Color #</strong> value to <code>028FFF</code> to use a custom blue color.</li>
+</ol>
+</ide>
+
+<hr>
+<h2>Launch the app</h2>
+<p>To verify the launch screen, run the app on a simulator.</p>
+<p>If you miss the launch screen before the app itself runs, you will need to relaunch the app.</p>
+<p>Additionally, you can also test the launch screen while the device is in landscape mode or on additional screen sizes like the iPad simulators. It should always be centered, no matter what the screen's dimensions.</p>
+<figure class="figure">
+<img src="./images/ex2_complete.png" alt="Viewing the custom app launch screen on an iPhone simulator." style="max-height: 500px;" title="Custom launch screen" />
+<figcaption class="figure-caption">Custom launch screen</figcaption>
+</figure>
+
+<hr>
+<h2>Exercise summary</h2>
+<p>Congratulations! In this lab you designed a responsive storyboard and configured it to be the iOS app's launch screen.</p>
+<p>You can view the completed solution in the <strong>Exercise 2 &gt; Completed</strong> folder of your copy of the cloned or downloaded <a href="https://github.com/XamarinUniversity/IOS104/">course materials</a>.</p>
+
+
+        <div class="align-right">
+            <a href="../index.html">Go Back</a>
+        </div>
+
+    </section>
+
+    <script src="./res/js/jquery.min.js"></script>
+    <script src="./res/js/jquery.imagemapster.min.js"></script>
+    <script src="./res/js/imagemap.js"></script>
+    <script src="./res/js/prettify.js"></script>
+    <script src="./res/js/script.js"></script>
+
+    <footer>Copyright (C) 2018 Xamarin Inc., Microsoft. All rights reserved.<br><a target="_blank" href="http://university.xamarin.com">Visit Xamarin University for more classes and content</a></footer>
+
+</body>
+</html>
